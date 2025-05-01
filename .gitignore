@@ -7,7 +7,9 @@ mvnw
 mvnw.cmd
 .mvn/
 .gitattributes
-
+.mvn/wrapper
+mvnw
+mvnw.cmd
 =======
 ### STS ###
 .apt_generated
