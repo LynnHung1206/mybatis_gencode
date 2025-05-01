@@ -25,7 +25,7 @@ public class CodeGenMybatisApplication implements CommandLineRunner {
     System.out.println("請輸入 table 名稱（輸入 q 離開）：");
     while (true) {
       System.out.print("> ");
-      String table = sc.nextLine().trim();
+      String table = sc.nextLine().trim().toLowerCase();
       if ("q".equalsIgnoreCase(table) || table.isEmpty()) {
         break;
       }

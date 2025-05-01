@@ -9,7 +9,7 @@ import lombok.Setter;
 */
 @Getter
 @Setter
-public class ${table.tableName?cap_first}Vo {
+public class  ${toCamelCaseFirstCapitalize(table.tableName)}Vo {
 <#list table.columns as c>
     /** ${c.comment} */
     private ${c.javaType} ${toCamelCase(c.name)};

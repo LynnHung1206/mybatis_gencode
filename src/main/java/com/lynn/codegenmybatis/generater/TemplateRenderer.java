@@ -52,6 +52,12 @@ public class TemplateRenderer {
       }
       return this.toCamelCase(arguments.get(0).toString(), false);
     });
+    data.put("toCamelCaseFirstCapitalize", (TemplateMethodModelEx) arguments -> {
+      if (arguments.isEmpty()) {
+        throw new TemplateModelException("Missing argument");
+      }
+      return this.toCamelCase(arguments.get(0).toString(), true);
+    });
   }
 
   /**
