@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 */
 @Getter
 @Setter
-@TableName(${table.tableName})
+@TableName("${table.tableName}")
 public class  ${toCamelCaseFirstCapitalize(table.tableName)}Vo {
 <#list table.columns as c>
     /** ${c.comment} */
